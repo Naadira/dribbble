@@ -1,5 +1,8 @@
 import React from 'react'
 import './HomePageComponent.css'
+import { IoFilterSharp } from "react-icons/io5";
+
+
 
 const HomePageComponent = () => {
   return (
@@ -23,6 +26,15 @@ const HomePageComponent = () => {
         <li>Typography</li>
         <li>Web Design</li>
       </ul>
+       
+
+     <button className="filters">
+     <IoFilterSharp /> Filters
+
+     </button>
+       
+    
+
     </div>
   )
 }
