@@ -1,0 +1,57 @@
+/* Container styles */
+.container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Adjust the gap between dropdown and menu */
+    padding: 5px; 
+   /* Optional: Add padding around the container */
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+    display: flex; /* Ensure flex layout for dropdown */
+  }
+  
+  .dropdown select {
+    padding: 10px 30px 10px 10px; /* Adjust padding to make space for the arrow */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* For rounded corners */
+    appearance: none; /* Remove default dropdown arrow */
+    background-color: white; /* Background color */
+    cursor: pointer;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  /* Arrow styles */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust right spacing as needed */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* Adjust size of arrow */
+    border-right: 5px solid transparent; /* Adjust size of arrow */
+    border-top: 5px solid #555; /* Color of the arrow */
+    pointer-events: none; /* Ensure arrow does not interfere with clicking on select */
+  }
+  
+  /* Menu styles */
+  .menu {
+    list-style-type: none;
+    display: flex; /* Display items in a row */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px; /* Adjust space between items */
+    cursor: pointer;
+  }
+  
+  .menu li:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  
