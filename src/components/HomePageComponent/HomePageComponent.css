@@ -1,7 +1,8 @@
 
 .container {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    flex-direction: row;
     gap: 40px; 
     padding: 10px 10px; 
     
@@ -26,18 +27,7 @@
     width: 175px; /* Adjust width as needed */
   }
   
-  .arrow {
-    position: absolute;
-    top: 50%;
-    right: 10px; 
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent; /* Adjust size of arrow */
-    border-right: 5px solid transparent; /* Adjust size of arrow */
-    border-top: 5px solid #555; /* Color of the arrow */
-    pointer-events: none; /* Ensure arrow does not interfere with clicking on select */
-  }
+
   
   /* Menu styles */
   .menu {
@@ -63,11 +53,30 @@
   }
   
 .filters{
-    margin-right: 40px;
     background-color: white;
     border-radius: 20px;
     width:90px;
     height:30px;
 }
 
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  flex: 1 0 21%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.gallery-image {
+  border-radius: 5%;
+  width: 220px;
+  height: 200px;
+}
+
+.image-details {
+  padding: 10px;
+}
 

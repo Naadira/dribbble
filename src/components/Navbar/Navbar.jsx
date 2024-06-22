@@ -42,14 +42,17 @@ const Navbar = () => {
                 <input type="text" className="serach_box" placeholder="Search..."/>
                 
             </div>
-       </div>
+      
 
      
       <div className="profile">
         <CgProfile className="profile-icon" />
       </div>
+
+      </div>
+      
     </div>
   )
 }
 
-export default Navbar
+export default Navbar   
