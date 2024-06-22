@@ -1,51 +1,43 @@
-.navbar{
+.container {
+  width: 100vw;
+  min-height: 10vh;
+  padding: 10px 2%;
+}
+
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 0px;
-  padding:2px 2%;
-  
-
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.logo{
-  margin-top:0%;
-  width:90px;
-  height:50px;
-  cursor:pointer;
+.logo {
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 20px; /* Space between logo and menu */
 }
 
-.search{
-  width:20px;
-  height:15px;
-  position: relative;
-  left:160px;
-}
-
-
-ul{
+ul {
   display: flex;
-  flex:1;
-  list-style:none;
-  text-align:center;
-  margin-left: 2%;
+  list-style: none;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
 
+ul li {
+  margin: 0 15px;
+  font-size: 15px;
+  cursor: pointer;
 }
-ul li{
-  display: inline-block;
-  margin-left: 10%;
-  margin:0px 5px;
-  font-size:15px;
-  cursor:pointer;
-  
-}
+
 .main-menu > li {
-position: relative;
-padding: 10px;
-cursor: pointer;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
 }
-
 
 .dropdown-container:hover .dropdown-menu {
   display: block;
@@ -70,21 +62,30 @@ cursor: pointer;
 .dropdown-menu li {
   padding: 10px;
   cursor: pointer;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
-.search-box{
+.search-box {
   display: flex;
   align-items: center;
   border-radius: 50px;
-  margin-right: 5%;
-}
-.search-box input{
-  padding: 6px;
-  max-width: 300px;
-  border-radius: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
 }
 
+.search-icon {
+  margin-right: 8px;
+}
+
+.search-box input {
+  padding: 6px;
+  border: none;
+  background: none;
+  outline: none;
+  border-radius: 30px;
+}
 
 .profile {
   display: flex;
@@ -96,11 +97,56 @@ cursor: pointer;
   border: 2px solid #333;
   background-color: #f0f0f0;
   cursor: pointer;
-  right:90px;
+  
 }
 
 .profile-icon {
   width: 90%;
   height: 90%;
   color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .search-box {
+    margin-right: 2%;
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  ul li {
+    margin: 5px;
+  }
+
+  .search-box {
+    order: 1;
+    margin: 10px 0;
+  }
+
+  .profile {
+    order: 2;
+    margin: 10px 0;
+  }
 }

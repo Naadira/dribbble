@@ -34,7 +34,7 @@ const HomePageComponent = () => {
 
   // Function to filter images based on selected category and option
   const filterImages = (category, option) => {
-    let filteredData = images;
+    let filteredData = images.slice(); // Create a copy to avoid mutating state directly
 
     // Apply category filter
     if (category !== "discover") {
@@ -69,6 +69,7 @@ const HomePageComponent = () => {
           </select>
           <div className="arrow"></div> {/* This will be the arrow */}
         </div>
+
         <ul className="menu">
           <li onClick={() => handleCategoryFilterChange("discover")}>Discover</li>
           <li onClick={() => handleCategoryFilterChange("animation")}>Animation</li>
@@ -84,13 +85,15 @@ const HomePageComponent = () => {
           <IoFilterSharp /> Filters
         </button>
       </div>
-
+      
       <div className="image-gallery">
         {filteredImages.map((image) => (
           <div key={image.id} className="image-item">
             <img src={`${image.src}.jpg`} alt={image.alt} className="gallery-image" />
-            <div className="image-details">
+            <div className="design-name-hover">
               <h3>{image.designName}</h3>
+            </div>
+            <div className="image-details">
               <p>By {image.designerName}</p>
               <p>Likes: {image.likes}</p>
               <p>Views: {image.views}</p>
