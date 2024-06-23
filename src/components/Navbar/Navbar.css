@@ -15,7 +15,7 @@
   width: 90px;
   height: 50px;
   cursor: pointer;
-  margin-right: 20px; /* Space between logo and menu */
+  margin-right: 20px; 
 }
 
 ul {
@@ -96,7 +96,7 @@ ul li {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative; /* Needed for the dropdown */
+  position: relative; 
 }
 
 .profile-icon {

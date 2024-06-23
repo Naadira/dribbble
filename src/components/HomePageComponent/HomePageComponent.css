@@ -181,7 +181,6 @@
 .like-and-views {
   display: flex;
   gap: 5px;
-  /* Add space between like and views */
 }
 
 .designer-info p {
@@ -224,12 +223,12 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 450px;
-  /* Adjust width as needed */
+
 }
 
 .footer {
   width: 100%;
-  flex-shrink: 0; /* Ensure footer doesn't shrink */
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -238,7 +237,6 @@
 
 .logo {
   width: 80px;
-  /* Adjust the width of the logo as needed */
 }
 
 ul {
@@ -261,11 +259,9 @@ ul li {
 .icon {
   font-size: 20px;
   margin-right: 10px;
-  /* Adjust the margin-right as needed */
   cursor: pointer;
 }
 
-/* Resetting default list styles */
 ul {
   list-style-type: none;
   margin: 0;
@@ -274,7 +270,7 @@ ul {
 
 .copyright {
   width: 100%;
-  flex-shrink: 0; /* Ensure copyright doesn't shrink */
+  flex-shrink: 0;
   padding: 5px 15px;
   text-align: center;
   font-size: 12px;
@@ -282,6 +278,6 @@ ul {
   color: gray;
 }
 li.space-between {
-  width: 230px; /* Adjust as needed */
+  width: 230px; 
   display: inline-block; 
 }
