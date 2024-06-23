@@ -36,7 +36,7 @@ const Navbar = ({ onSearch }) => {
           <li>Jobs</li>
           <li>Go Pro</li>
         </ul>
-        <div className='search-box'>
+        <div className={`search-box ${searchInput ? 'search-active' : ''}`}>
           <FaSearch className='search-icon' />
           <input 
             type="text" 
@@ -48,6 +48,17 @@ const Navbar = ({ onSearch }) => {
         </div>
         <div className="profile">
           <CgProfile className="profile-icon" />
+          <ul className="profile-dropdown">
+            <li className="profile-header">
+              <CgProfile className="profile-icon-dropdown" />
+              <span className="user-name">NAADIRA SAHAR N</span>
+            </li>
+            <li>Upload design work</li>
+            <li>Work preferences</li>
+            <li>Settings</li>
+            <hr />
+            <li>Sign out</li>
+          </ul>
         </div>
       </div>
     </div>
