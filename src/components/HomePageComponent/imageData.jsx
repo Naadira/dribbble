@@ -9,8 +9,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av1",
       "tags": ["yellow", "flower", "seed", "bright"],
       "categories": ["branding","web design","mobile"],
-      "likes": 5,
-      "views": 100
+      "likes": 102,
+      "views": "1.5k"
     },
     {
       "id": 2,
@@ -21,8 +21,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av2",
       "tags": ["blue", "ocean", "wave", "cool"],
       "categories": ["branding", "web design","print"],
-      "likes": 12,
-      "views": 230
+      "likes": 87,
+      "views": "4.5k",
     },
     {
       "id": 3,
@@ -31,9 +31,9 @@ export const imageData=[
       "designName": "Mountain Peak",
       "designerName": "Rocky",
       "avatar": "./src/assets/images/av3",
-      "tags": ["mountain", "snow", "peak", "majestic"],
+      "tags": ["mountain", "snow", "peak", "majestic","brown"],
       "categories": ["typography", "branding","print"],
-      "likes": 9,
+      "likes": 20,
       "views": 180
     },
     {
@@ -43,10 +43,10 @@ export const imageData=[
       "designName": "City Lights",
       "designerName": "Urban",
       "avatar": "./src/assets/images/av4",
-      "tags": ["city", "night", "lights", "bright"],
+      "tags": ["green","city", "night", "lights", "bright"],
       "categories": ["web design", "illustration","print"],
-      "likes": 20,
-      "views": 300
+      "likes": 454,
+      "views": "2.2k"
     },
     {
       "id": 5,
@@ -55,10 +55,10 @@ export const imageData=[
       "designName": "Desert Mirage",
       "designerName": "Sandy",
       "avatar": "./src/assets/images/av6",
-      "tags": ["desert", "sunset", "mirage", "warm"],
+      "tags": ["brown","desert", "sunset", "mirage", "warm"],
       "categories": ["typography", "branding"],
-      "likes": 15,
-      "views": 250
+      "likes": 65,
+      "views": 450
     },
     {
       "id": 6,
@@ -67,10 +67,10 @@ export const imageData=[
       "designName": "Forest Whisper",
       "designerName": "Greenie",
       "avatar": "./src/assets/images/av7",
-      "tags": ["forest", "trees", "whisper", "calm"],
+      "tags": ["green","forest", "trees", "whisper", "calm"],
       "categories": ["illustration", "branding"],
-      "likes": 11,
-      "views": 190
+      "likes": 280,
+      "views": "400"
     },
     {
       "id": 7,
@@ -79,9 +79,9 @@ export const imageData=[
       "designName": "Galaxy Quest",
       "designerName": "Star",
       "avatar": "./src/assets/images/av5",
-      "tags": ["galaxy", "stars", "space", "infinite"],
+      "tags": ["galaxy", "stars", "space", "infinite","blue"],
       "categories": ["animation", "web design","mobile","product design"],
-      "likes": 18,
+      "likes": 35,
       "views": 275
     },
     {
@@ -91,10 +91,10 @@ export const imageData=[
       "designName": "Autumn Leaves",
       "designerName": "Leafy",
       "avatar": "./src/assets/images/av9",
-      "tags": ["autumn", "leaves", "fall", "orange"],
+      "tags": ["autumn", "leaves","green", "fall", "orange"],
       "categories": ["typography", "illustration","mobile"],
-      "likes": 13,
-      "views": 220
+      "likes": 245,
+      "views": "1.2k"
     },
     {
       "id": 9,
@@ -115,10 +115,10 @@ export const imageData=[
       "designName": "Sunrise Bliss",
       "designerName": "Dawn",
       "avatar": "./src/assets/images/av2",
-      "tags": ["sunrise", "bliss", "morning", "peaceful"],
+      "tags": ["sunrise", "bliss", "morning","grey" ,"peaceful"],
       "categories": ["typography", "branding", "web design","mobile"],
-      "likes": 17,
-      "views": 260
+      "likes": 560,
+      "views": "5.8k"
     },
     {
       "id": 11,
@@ -129,8 +129,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av1",
       "tags": ["rain", "days", "grey", "calm"],
       "categories": ["illustration", "web design","typography","mobile"],
-      "likes": 10,
-      "views": 200
+      "likes": 76,
+      "views": 450
     },
     {
       "id": 12,
@@ -141,8 +141,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av4",
       "tags": ["spring", "bloom", "flowers", "colorful"],
       "categories": ["typography", "branding","mobile"],
-      "likes": 14,
-      "views": 240
+      "likes": 390,
+      "views": 870
     },
     {
       "id": 13,
@@ -153,8 +153,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av5",
       "tags": ["summer", "vibes", "beach", "bright"],
       "categories": ["product design", "branding","print"],
-      "likes": 16,
-      "views": 280
+      "likes": 34,
+      "views": "3.2k"
     },
     {
       "id": 14,
@@ -165,8 +165,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av7",
       "tags": ["urban", "jungle", "city", "green"],
       "categories": ["illustration", "web design"],
-      "likes": 19,
-      "views": 290
+      "likes": "993",
+      "views": "9.5k"
     },
     {
       "id": 15,
@@ -177,8 +177,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av8",
       "tags": ["country", "roads", "fields", "peaceful"],
       "categories": ["typography", "branding"],
-      "likes": 8,
-      "views": 170
+      "likes": 21,
+      "views": 564
     },
     {
       "id": 16,
@@ -187,10 +187,10 @@ export const imageData=[
       "designName": "Mystic Mountains",
       "designerName": "Mystic",
       "avatar": "./src/assets/images/av4",
-      "tags": ["mountains", "mist", "mystic", "cool"],
+      "tags": ["mountains", "mist", "mystic", "cool","water"],
       "categories": ["illustration", "branding", "product design"],
-      "likes": 21,
-      "views": 310
+      "likes": 98,
+      "views": "4.3k"
     },
     {
       "id": 17,
@@ -201,8 +201,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av1",
       "tags": ["twilight", "dreams", "purple", "calm"],
       "categories": ["animation", "web design","mobile"],
-      "likes": 23,
-      "views": 330
+      "likes": 70,
+      "views": "1.5k"
     },
     {
       "id": 18,
@@ -213,8 +213,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av6",
       "tags": ["cosmic", "space", "journey", "stars"],
       "categories": ["animation", "illustration","product design","mobile"],
-      "likes": 25,
-      "views": 350
+      "likes": 300,
+      "views": "2.2k"
     },
     {
       "id": 19,
@@ -225,8 +225,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av2",
       "tags": ["rainforest", "green", "retreat", "nature"],
       "categories": ["typography", "branding" ,"product design"],
-      "likes": 24,
-      "views": 340
+      "likes": 34,
+      "views": 267
     },
     {
       "id": 20,
@@ -237,8 +237,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av7",
       "tags": ["zen", "garden", "peaceful", "serene"],
       "categories": ["illustration", "web design","product design","mobile"],
-      "likes": 26,
-      "views": 360
+      "likes": 16,
+      "views": 467
     },
     {
       "id": 21,
@@ -261,8 +261,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av3",
       "tags": ["lunar", "eclipse", "moon", "night"],
       "categories": ["animation", "web design","mobile"],
-      "likes": 22,
-      "views": 320
+      "likes": 85,
+      "views": 500
     },
     {
       "id": 23,
@@ -285,8 +285,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av5",
       "tags": ["meadow", "song", "flowers", "calm"],
       "categories": ["typography", "print"],
-      "likes": 15,
-      "views": 210
+      "likes": 453,
+      "views": 876
     },
     {
       "id": 25,
@@ -298,7 +298,7 @@ export const imageData=[
       "tags": ["aurora", "sky", "northern lights", "colorful"],
       "categories": ["animation", "illustration", "web design"],
       "likes": 29,
-      "views": 390
+      "views": 546
     },
     {
       "id": 26,
@@ -309,7 +309,7 @@ export const imageData=[
       "avatar": "./src/assets/images/av4",
       "tags": ["sunny", "meadow", "bright", "flowers"],
       "categories": ["illustration", "print", "branding"],
-      "likes": 14,
+      "likes": 31,
       "views": 220
     },
     {
@@ -333,8 +333,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av9",
       "tags": ["enchanted", "garden", "magic", "flowers"],
       "categories": ["illustration", "branding", "print", "product design"],
-      "likes": 18,
-      "views": 295
+      "likes": 90,
+      "views": "6.5k"
     },
     {
       "id": 29,
@@ -357,8 +357,8 @@ export const imageData=[
       "avatar": "./src/assets/images/av2",
       "tags": ["golden", "fields", "wheat", "sunset"],
       "categories": ["typography", "branding", "print", "product design"],
-      "likes": 26,
-      "views": 360
+      "likes": 398,
+      "views": "5.4k"
     },
     {
       "id": 31,
@@ -379,10 +379,10 @@ export const imageData=[
       "designName": "Celestial Dreams",
       "designerName": "Nova",
       "avatar": "./src/assets/images/av3",
-      "tags": ["celestial", "dreams", "space", "stars"],
+      "tags": ["celestial", "dreams", "space", "stars","white"],
       "categories": ["animation", "web design", "product design"],
-      "likes": 27,
-      "views": 370
+      "likes": 654,
+      "views": "8.6k"
     }
   ]
   

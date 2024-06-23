@@ -1,14 +1,19 @@
-import React from 'react'
-import './Navbar.css'
-import { FaSearch } from 'react-icons/fa'
-import logo from '../../assets/images/logo.png'
+import React, { useState } from 'react';
+import './Navbar.css';
+import { FaSearch } from 'react-icons/fa';
+import logo from '../../assets/images/logo.png';
 import { CgProfile } from "react-icons/cg";
-import { imageData } from '../HomePageComponent/imageData';
 
-const Navbar = () => {
-  
+const Navbar = ({ onSearch }) => {
+  const [searchInput, setSearchInput] = useState('');
+
+  const handleSearchChange = (event) => {
+    const value = event.target.value;
+    setSearchInput(value);
+    onSearch(value);
+  };
+
   return (
-    
     <div className='container'>
       <div className='navbar'>
         <img src={logo} alt="Logo" className='logo' />
@@ -33,14 +38,20 @@ const Navbar = () => {
         </ul>
         <div className='search-box'>
           <FaSearch className='search-icon' />
-          <input type="text" className="search_input" placeholder="Search..." />
+          <input 
+            type="text" 
+            className="search_input" 
+            placeholder="Search..." 
+            value={searchInput} 
+            onChange={handleSearchChange} 
+          />
         </div>
         <div className="profile">
           <CgProfile className="profile-icon" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
