@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './HomePageComponent.css';
 import { imageData } from './imageData';
-import { IoFilterSharp } from "react-icons/io5";
+import { IoFilterSharp, IoEyeSharp } from "react-icons/io5"; // Import eye icon
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai"; // Import heart icons
 
 const HomePageComponent = () => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
   const [filterOption, setFilterOption] = useState("Following"); // Default filter option
   const [selectedCategory, setSelectedCategory] = useState("discover"); // Default category
+  const [likedImages, setLikedImages] = useState({}); // State to track liked images
 
   useEffect(() => {
     // Set initial images from imageData
@@ -58,6 +60,25 @@ const HomePageComponent = () => {
     setFilteredImages(filteredData);
   };
 
+  // Handle like button click
+  const handleLikeClick = (id) => {
+    const updatedImages = images.map(image => {
+      if (image.id === id) {
+        const isLiked = likedImages[id];
+        const updatedLikes = isLiked ? image.likes - 1 : image.likes + 1;
+        return { ...image, likes: updatedLikes };
+      }
+      return image;
+    });
+
+    setImages(updatedImages);
+    setFilteredImages(updatedImages);
+    setLikedImages(prevLikedImages => ({
+      ...prevLikedImages,
+      [id]: !prevLikedImages[id]
+    }));
+  };
+
   return (
     <div className="container">
       <div className='container-item'> 
@@ -69,7 +90,7 @@ const HomePageComponent = () => {
           </select>
           <div className="arrow"></div> {/* This will be the arrow */}
         </div>
-
+  
         <ul className="menu">
           <li onClick={() => handleCategoryFilterChange("discover")}>Discover</li>
           <li onClick={() => handleCategoryFilterChange("animation")}>Animation</li>
@@ -94,13 +115,29 @@ const HomePageComponent = () => {
               <h3>{image.designName}</h3>
             </div>
             <div className="image-details">
-              <p>By {image.designerName}</p>
-              <p>Likes: {image.likes}</p>
-              <p>Views: {image.views}</p>
+              <div className="designer-info">
+                <div className="avatar">
+                  <img src={`${image.avatar}.jpg`} alt={image.designerName} className="avatar-img" />
+                </div>
+                <p>{image.designerName}</p>
+              </div>
+              <div className="pro-button">PRO</div>
+              <div className="like-and-views">
+                <div className="like-button" onClick={() => handleLikeClick(image.id)}>
+                  {likedImages[image.id] ? <AiFillHeart /> : <AiOutlineHeart />}
+                  <span>{image.likes}</span>
+                </div>
+                <div className="views">
+                  <IoEyeSharp />
+                  <span>{image.views}</span>
+                  
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
