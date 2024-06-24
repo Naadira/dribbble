@@ -5,13 +5,13 @@ import logo from '../../assets/images/logo.png';
 import { CgProfile } from "react-icons/cg";
 
 const Navbar = ({ onSearch }) => {
-  const [searchInput, setSearchInput] = useState('');
+  // const [searchInput, setSearchInput] = useState('');
 
-  const handleSearchChange = (event) => {
-    const value = event.target.value;
-    setSearchInput(value);
-    onSearch(value);
-  };
+  // const handleSearchChange = (event) => {
+  //   const value = event.target.value;
+  //   setSearchInput(value);
+  //   // onSearch(value);
+  // };
 
   return (
     <div className='container'>
@@ -36,7 +36,7 @@ const Navbar = ({ onSearch }) => {
           <li>Jobs</li>
           <li>Go Pro</li>
         </ul>
-        <div className={`search-box ${searchInput ? 'search-active' : ''}`}>
+        {/* <div className={`search-box ${searchInput ? 'search-active' : ''}`}>
           <FaSearch className='search-icon' />
           <input 
             type="text" 
@@ -45,7 +45,7 @@ const Navbar = ({ onSearch }) => {
             value={searchInput} 
             onChange={handleSearchChange} 
           />
-        </div>
+        </div> */}
         <div className="profile">
           <CgProfile className="profile-icon" />
           <ul className="profile-dropdown">

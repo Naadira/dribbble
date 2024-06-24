@@ -64,8 +64,17 @@ ul li {
   cursor: pointer;
   font-weight: lighter;
 }
-
+.search{
+  display: flex;
+  justify-content: end;
+  position: relative;
+  right:10%;
+  top:55px;
+}
 .search-box {
+
+  /* margin-top: 20px; */
+  /* padding: 10px; */
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -76,10 +85,11 @@ ul li {
 }
 
 .search-icon {
-  margin-right: 8px;
+  margin-right: 1px;
 }
 
 .search-box input {
+  
   padding: 6px;
   border: none;
   background: none;
@@ -103,6 +113,8 @@ ul li {
   width: 35px;
   height: 35px;
   color: #333;
+  margin-left: 120px;
+ 
 }
 
 .profile-dropdown {

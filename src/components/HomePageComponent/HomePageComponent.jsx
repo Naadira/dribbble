@@ -8,7 +8,8 @@ import logo from '../../assets/images/logo.png';
 import { FaSkype, FaFacebook, FaInstagram, FaPinterest } from 'react-icons/fa';
 import 'react-toastify/dist/ReactToastify.css';
 
-const HomePageComponent = () => {
+const HomePageComponent = ({search}) => {
+  console.log("search:",search)
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
   const [filterOption, setFilterOption] = useState("Following");
@@ -18,14 +19,34 @@ const HomePageComponent = () => {
   const [selectedColors, setSelectedColors] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
 
+
+  const handleSearchFilterChange = (search) => {
+    console.log("Called..")
+    const filterArray = imageData.filter((data) => {
+      if(
+        data.designName.toLowerCase().includes(search.toLowerCase())||
+        data.designerName.toLowerCase().includes(search.toLowerCase())||
+        data.tags.includes(search.toLowerCase())
+      ) return data;
+    })
+    console.log(filterArray);
+    setFilteredImages(filterArray)
+  }
+  useEffect(()=> {
+    if(search){
+      handleSearchFilterChange(search);
+    }
+  },[search]);
   useEffect(() => {
     setImages(imageData);
     setFilteredImages(imageData);
     toast.success("Images loaded successfully!");
+    
+   
   }, []);
 
   const isColor = (tag) => {
-    const colors = ['red', 'blue', 'green', 'yellow'];
+    const colors = ['red', 'blue', 'green', 'yellow','brown'];
     return colors.includes(tag.toLowerCase());
   };
 
@@ -192,6 +213,14 @@ const HomePageComponent = () => {
         ) : (
           <div className="no-results">No results found</div>
         )}
+      </div>
+      <div className='notfound'>
+      {
+        filterImages.length<1 &&
+       ( <div className='notfound'>
+            <p>No Result Found</p>
+        </div>)
+      }
       </div>
 
       <div className="footer">
