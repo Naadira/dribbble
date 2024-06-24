@@ -185,7 +185,7 @@ const HomePageComponent = ({search}) => {
         {filteredImages.length > 0 ? (
           filteredImages.map((image) => (
             <div key={image.id} className="image-item">
-              <img src={`${image.src}.jpg`} alt={image.alt} className="gallery-image" />
+              <img src={image.src} alt={image.alt} className="gallery-image" />
               <div className="design-name-hover">
                 <h3>{image.designName}</h3>
               </div>

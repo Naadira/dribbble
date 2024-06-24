@@ -1,8 +1,41 @@
+import img1 from "../../assets/images/img1.jpg"
+import img2 from "../../assets/images/img2.jpg"
+import img3 from "../../assets/images/img3.jpg"
+import img4 from "../../assets/images/img4.jpg"
+import img5 from "../../assets/images/img5.jpg"
+import img6 from "../../assets/images/img6.jpg"
+import img7 from "../../assets/images/img7.jpg"
+import img8 from "../../assets/images/img8.jpg"
+import img9 from "../../assets/images/img9.jpg"
+import img10 from "../../assets/images/img10.jpg"
+import img11 from "../../assets/images/img11.jpg"
+import img12 from "../../assets/images/img12.jpg"
+import img13 from "../../assets/images/img13.jpg"
+import img14 from "../../assets/images/img14.jpg"
+import img15 from "../../assets/images/img15.jpg"
+import img16 from "../../assets/images/img16.jpg"
+import img17 from "../../assets/images/img17.jpg"
+import img18 from "../../assets/images/img18.jpg"
+import img19 from "../../assets/images/img19.jpg"
+import img20 from "../../assets/images/img20.jpg"
+import img22 from "../../assets/images/img21.jpg"
+import img23 from "../../assets/images/img22.jpg"
+import img21 from "../../assets/images/img23.jpg"
+import img24 from "../../assets/images/img24.jpg"
+import img25 from "../../assets/images/img25.jpg"
+import img26 from "../../assets/images/img26.jpg"
+import img27 from "../../assets/images/img27.jpg"
+import img28 from "../../assets/images/img28.jpg"
+import img29 from "../../assets/images/img29.jpg"
+import img30 from "../../assets/images/img30.jpg"
+import img31 from "../../assets/images/img31.jpg"
+import img32 from "../../assets/images/img32.jpg"
+
 export const imageData=[
   
     {
       "id": 1,
-      "src": "./src/assets/images/img1",
+      "src": img1,
       "alt": "Design1",
       "designName": "Flower Power",
       "designerName": "Zuco",
@@ -14,7 +47,7 @@ export const imageData=[
     },
     {
       "id": 2,
-      "src": "./src/assets/images/img2",
+      "src": img2,
       "alt": "Design2",
       "designName": "Ocean Breeze",
       "designerName": "Aqua",
@@ -26,7 +59,7 @@ export const imageData=[
     },
     {
       "id": 3,
-      "src": "./src/assets/images/img3",
+      "src": img3,
       "alt": "Design3",
       "designName": "Mountain Peak",
       "designerName": "Rocky",
@@ -38,7 +71,7 @@ export const imageData=[
     },
     {
       "id": 4,
-      "src": "./src/assets/images/img4",
+      "src": img4,
       "alt": "Design4",
       "designName": "City Lights",
       "designerName": "Urban",
@@ -50,7 +83,7 @@ export const imageData=[
     },
     {
       "id": 5,
-      "src": "./src/assets/images/img5",
+      "src": img5,
       "alt": "Design5",
       "designName": "Desert Mirage",
       "designerName": "Sandy",
@@ -62,7 +95,7 @@ export const imageData=[
     },
     {
       "id": 6,
-      "src": "./src/assets/images/img6",
+      "src": img6,
       "alt": "Design6",
       "designName": "Forest Whisper",
       "designerName": "Greenie",
@@ -74,7 +107,7 @@ export const imageData=[
     },
     {
       "id": 7,
-      "src": "./src/assets/images/img7",
+      "src": img7,
       "alt": "Design7",
       "designName": "Galaxy Quest",
       "designerName": "Star",
@@ -86,7 +119,7 @@ export const imageData=[
     },
     {
       "id": 8,
-      "src": "./src/assets/images/img8",
+      "src": img8,
       "alt": "Design8",
       "designName": "Autumn Leaves",
       "designerName": "Leafy",
@@ -98,7 +131,7 @@ export const imageData=[
     },
     {
       "id": 9,
-      "src": "./src/assets/images/img9",
+      "src": img9,
       "alt": "Design9",
       "designName": "Winter Wonderland",
       "designerName": "Snowy",
@@ -110,7 +143,7 @@ export const imageData=[
     },
     {
       "id": 10,
-      "src": "./src/assets/images/img10",
+      "src": img10,
       "alt": "Design10",
       "designName": "Sunrise Bliss",
       "designerName": "Dawn",
@@ -122,7 +155,7 @@ export const imageData=[
     },
     {
       "id": 11,
-      "src": "./src/assets/images/img11",
+      "src": img11,
       "alt": "Design11",
       "designName": "Rainy Days",
       "designerName": "Stormy",
@@ -134,7 +167,7 @@ export const imageData=[
     },
     {
       "id": 12,
-      "src": "./src/assets/images/img12",
+      "src": img12,
       "alt": "Design12",
       "designName": "Spring Bloom",
       "designerName": "Flora",
@@ -146,7 +179,7 @@ export const imageData=[
     },
     {
       "id": 13,
-      "src": "./src/assets/images/img13",
+      "src": img13,
       "alt": "Design13",
       "designName": "Summer Vibes",
       "designerName": "Sunny",
@@ -158,7 +191,7 @@ export const imageData=[
     },
     {
       "id": 14,
-      "src": "./src/assets/images/img14",
+      "src": img14,
       "alt": "Design14",
       "designName": "Urban Jungle",
       "designerName": "City",
@@ -170,7 +203,7 @@ export const imageData=[
     },
     {
       "id": 15,
-      "src": "./src/assets/images/img15",
+      "src": img15,
       "alt": "Design15",
       "designName": "Country Roads",
       "designerName": "Rural",
@@ -182,7 +215,7 @@ export const imageData=[
     },
     {
       "id": 16,
-      "src": "./src/assets/images/img16",
+      "src": img16,
       "alt": "Design16",
       "designName": "Mystic Mountains",
       "designerName": "Mystic",
@@ -194,7 +227,7 @@ export const imageData=[
     },
     {
       "id": 17,
-      "src": "./src/assets/images/img17",
+      "src": img17,
       "alt": "Design17",
       "designName": "Twilight Dreams",
       "designerName": "Dreamer",
@@ -206,7 +239,7 @@ export const imageData=[
     },
     {
       "id": 18,
-      "src": "./src/assets/images/img18",
+      "src": img18,
       "alt": "Design18",
       "designName": "Cosmic Journey",
       "designerName": "Cosmo",
@@ -218,7 +251,7 @@ export const imageData=[
     },
     {
       "id": 19,
-      "src": "./src/assets/images/img19",
+      "src": img19,
       "alt": "Design19",
       "designName": "Rainforest Retreat",
       "designerName": "Rain",
@@ -230,7 +263,7 @@ export const imageData=[
     },
     {
       "id": 20,
-      "src": "./src/assets/images/img20",
+      "src": img20,
       "alt": "Design20",
       "designName": "Zen Garden",
       "designerName": "Zen",
@@ -242,7 +275,7 @@ export const imageData=[
     },
     {
       "id": 21,
-      "src": "./src/assets/images/img21",
+      "src": img21,
       "alt": "Design21",
       "designName": "Glacier Glow",
       "designerName": "Icey",
@@ -254,7 +287,7 @@ export const imageData=[
     },
     {
       "id": 22,
-      "src": "./src/assets/images/img22",
+      "src": img22,
       "alt": "Design22",
       "designName": "Lunar Eclipse",
       "designerName": "Luna",
@@ -266,7 +299,7 @@ export const imageData=[
     },
     {
       "id": 23,
-      "src": "./src/assets/images/img23",
+      "src": img23,
       "alt": "Design23",
       "designName": "Tropical Paradise",
       "designerName": "Isla",
@@ -278,7 +311,7 @@ export const imageData=[
     },
     {
       "id": 24,
-      "src": "./src/assets/images/img24",
+      "src": img24,
       "alt": "Design24",
       "designName": "Meadow Song",
       "designerName": "Daisy",
@@ -290,7 +323,7 @@ export const imageData=[
     },
     {
       "id": 25,
-      "src": "./src/assets/images/img25",
+      "src": img25,
       "alt": "Design25",
       "designName": "Aurora Sky",
       "designerName": "Aurora",
@@ -302,7 +335,7 @@ export const imageData=[
     },
     {
       "id": 26,
-      "src": "./src/assets/images/img26",
+      "src": img26,
       "alt": "Design26",
       "designName": "Sunny Meadow",
       "designerName": "Sunshine",
@@ -314,7 +347,7 @@ export const imageData=[
     },
     {
       "id": 27,
-      "src": "./src/assets/images/img27",
+      "src": img27,
       "alt": "Design27",
       "designName": "Mystic Forest",
       "designerName": "Enigma",
@@ -326,7 +359,7 @@ export const imageData=[
     },
     {
       "id": 28,
-      "src": "./src/assets/images/img28",
+      "src": img28,
       "alt": "Design28",
       "designName": "Enchanted Garden",
       "designerName": "Fae",
@@ -338,7 +371,7 @@ export const imageData=[
     },
     {
       "id": 29,
-      "src": "./src/assets/images/img29",
+      "src": img29,
       "alt": "Design29",
       "designName": "Starry Night",
       "designerName": "Vincent",
@@ -350,7 +383,7 @@ export const imageData=[
     },
     {
       "id": 30,
-      "src": "./src/assets/images/img30",
+      "src": img30,
       "alt": "Design30",
       "designName": "Golden Fields",
       "designerName": "Harvest",
@@ -362,7 +395,7 @@ export const imageData=[
     },
     {
       "id": 31,
-      "src": "./src/assets/images/img31",
+      "src": img31,
       "alt": "Design31",
       "designName": "Crimson Sunset",
       "designerName": "Scarlet",
@@ -374,7 +407,7 @@ export const imageData=[
     },
     {
       "id": 32,
-      "src": "./src/assets/images/img32",
+      "src": img32,
       "alt": "Design32",
       "designName": "Celestial Dreams",
       "designerName": "Nova",
