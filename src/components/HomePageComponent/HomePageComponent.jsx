@@ -192,7 +192,7 @@ const HomePageComponent = ({search}) => {
               <div className="image-details">
                 <div className="designer-info">
                   <div className="avatar">
-                    <img src={`${image.avatar}.jpg`} alt={image.designerName} className="avatar-img" />
+                    <img src={image.avatar} alt={image.designerName} className="avatar-img" />
                   </div>
                   <p>{image.designerName}</p>
                 </div>
