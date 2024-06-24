@@ -7,7 +7,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -15,7 +15,7 @@
   width: 90px;
   height: 50px;
   cursor: pointer;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 ul {
@@ -64,17 +64,16 @@ ul li {
   cursor: pointer;
   font-weight: lighter;
 }
-.search{
+
+.search {
   display: flex;
   justify-content: end;
   position: relative;
-  right:10%;
-  top:55px;
+  right: 5%;
+  top: 55px;
 }
-.search-box {
 
-  /* margin-top: 20px; */
-  /* padding: 10px; */
+.search-box {
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -89,7 +88,6 @@ ul li {
 }
 
 .search-box input {
-  
   padding: 6px;
   border: none;
   background: none;
@@ -106,7 +104,7 @@ ul li {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative; 
+  position: relative;
 }
 
 .profile-icon {
@@ -114,7 +112,6 @@ ul li {
   height: 35px;
   color: #333;
   margin-left: 120px;
- 
 }
 
 .profile-dropdown {
@@ -164,8 +161,6 @@ ul li {
   display: flex;
 }
 
-
-
 .profile-dropdown hr {
   margin: 0;
   border: none;
@@ -189,14 +184,18 @@ ul li {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   ul {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     margin: 10px 0;
   }
@@ -208,10 +207,42 @@ ul li {
   .search-box {
     order: 1;
     margin: 10px 0;
+    width: 100%;
+    justify-content: center;
   }
 
   .profile {
     order: 2;
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 70px;
+    height: 40px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+
+  .search-box {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .profile {
+    margin-top: 10px;
   }
 }

@@ -19,7 +19,6 @@ const HomePageComponent = ({search}) => {
   const [selectedColors, setSelectedColors] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
 
-
   const handleSearchFilterChange = (search) => {
     console.log("Called..")
     const filterArray = imageData.filter((data) => {
