@@ -170,11 +170,11 @@ const HomePageComponent = ({search}) => {
           <div className="tag-color-row">
             <div className="tag-filters">
               <label>Tags:</label>
-              <input type="text" onChange={(e) => handleTagFilterChange(e.target.value)} placeholder="Enter tags separated by comma" />
+              <input type="text" onChange={(e) => handleTagFilterChange(e.target.value)} placeholder="Enter tags... " />
             </div>
             <div className="color-filters">
               <label>Colors:</label>
-              <input type="text" onChange={(e) => handleColorFilterChange(e.target.value)} placeholder="Enter colors separated by comma" />
+              <input type="text" onChange={(e) => handleColorFilterChange(e.target.value)} placeholder="Enter colors..." />
             </div>
           </div>
         </div>

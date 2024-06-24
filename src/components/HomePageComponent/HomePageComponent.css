@@ -212,7 +212,7 @@
 .color-filters {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .tag-filters label,
@@ -227,7 +227,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
-  max-width: 450px;
+  max-width: 350px;
 }
 
 .footer {
